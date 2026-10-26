@@ -21,11 +21,10 @@ Plain HTML and CSS, no frameworks.
 ## Design issues
 
 - **Typos**:
-  "piece of mind" -> "peace of mind"
-  "someones else" -> "someone else's"
-  "Look no futher" -> "Look no further"
-- **Colour contrast**:
-  The orange `#FF6D00` fails WCAG AA for white on orange.
+  - "piece of mind" -> "peace of mind"
+  - "someones else" -> "someone else's"
+  - "Look no futher" -> "Look no further"
+- **Colour contrast** — The orange `#FF6D00` fails WCAG AA for white on orange.
   Meeting AA would need a darker orange.
 
 ## AI use
