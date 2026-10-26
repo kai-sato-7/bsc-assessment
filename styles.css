@@ -1,0 +1,82 @@
+:root {
+   /* UI colours */
+   --color-orange:        #ff6d00;   /* buttons & links             */
+   --color-orange-hover:  #de6c17;   /* hovered buttons & links     */
+   --color-heading:       #36413c;   /* Heading 1 & 2               */
+   --color-body:          #5e6e66;   /* Heading 3 & paragraphs      */
+   --color-white:         #ffffff;
+
+   /* Layout */
+   --container-width:     1140px;
+   --container-gutter:    24px;
+
+   /* Typography */
+   --font-base:           'Quicksand', sans-serif;
+   --font-size-h1:        45px;
+   --font-size-h2:        36px;
+   --font-size-h3:        24px;
+   --font-size-p:         18px;
+   --font-size-link:      18px;
+
+   --font-size-h1-mobile: 40px;
+   --font-size-h2-mobile: 32px;
+   --font-size-h3-mobile: 24px;
+   --font-size-p-mobile: 18px;
+   --font-size-link-mobile: 18px;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: var(--font-base);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   color: var(--color-body);
+   background: var(--color-white);
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+a {
+   color: var(--color-orange);
+   text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+   margin: 0;
+   font-weight: 700;
+   line-height: 1.2;
+}
+
+h1,
+h2 {
+   color: var(--color-heading);
+}
+
+h3 {
+   color: var(--color-body);
+}
+
+p {
+   margin: 0;
+}
+
+.container {
+   width: 100%;
+   max-width: var(--container-width);
+   margin: 0 auto;
+   padding: 0 var(--container-gutter);
+}
