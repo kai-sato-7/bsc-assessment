@@ -84,11 +84,18 @@ p {
    color: var(--color-white);
    font-weight: 700;
    font-size: var(--font-size-link);
+   transition: background-color .15s ease;
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus-visible {
    background: var(--color-orange-hover);
+}
+
+.btn:focus-visible,
+.link:focus-visible {
+   outline: 2px solid var(--color-heading);
+   outline-offset: 3px;
 }
 
 /* Hero */
@@ -159,15 +166,22 @@ p {
    color: var(--color-orange);
    font-weight: 700;
    font-size: var(--font-size-link);
+   transition: color .15s ease;
 }
 
 .link__arrow {
    margin-left: 2px;
+   transition: transform .15s ease;
 }
 
 .link:hover,
-.link:focus {
+.link:focus-visible {
    color: var(--color-orange-hover);
+}
+
+.link:hover .link__arrow,
+.link:focus-visible .link__arrow {
+   transform: translateX(3px);
 }
 
 /* Services */
